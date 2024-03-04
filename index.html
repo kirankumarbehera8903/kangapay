@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paytm clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/tabview_style.css">
+    <link rel="stylesheet" href="./styles/phoneview.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid first-layer">
+        <nav class="container">
+            <div class="left-part">
+                <iconify-icon icon="ci:hamburger-md" width="30" height="30" id="menu-bar"></iconify-icon>
+
+                <div class="logo">
+                    <img src="./images/asset 0.svg" alt="logo">
+                </div>
+            </div>
+            <div class="center-part">
+                <ul class="menu" id="menu">
+                    <li><a href="#">Paytm for Consumer</a>
+                        <ul id="first-dropdown">
+                            <li id="payments">Payments <span><iconify-icon icon="solar:arrow-right-outline"
+                                        style="color: black;" width="24" height="24"></iconify-icon><iconify-icon
+                                        icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                        height="24"></iconify-icon></span>
+                                <ul id="first-sub-dropdown" class="payment-dropdown">
+                                    <li>Bill Payment & Recharges</li>
+                                    <li>Send Money to Anyone</li>
+                                    <li id="online-payments">Online Payments</li>
+                                    <li>In-Store Payments</li>
+                                </ul>
+                            </li>
+                            <li id="t-booking">Ticket booking <span><iconify-icon icon="solar:arrow-right-outline"
+                                        style="color: black;" width="24" height="24"></iconify-icon><iconify-icon
+                                        icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                        height="24"></iconify-icon></span>
+                                <ul id="second-sub-dropdown" class="booking-dropdown">
+                                    <li>Movie Tickets</li>
+                                    <li>Flight Tickets</li>
+                                    <li id="online-payments">Train tickets</li>
+                                    <li>Bus Tickets</li>
+                                </ul>
+                            </li>
+                            <li id="Financial-Services">Financial Services <span><iconify-icon
+                                        icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                        height="24"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                        style="color: black;" width="24" height="24"></iconify-icon></span>
+                                <ul id="third-sub-dropdown" class="f-dropdown">
+                                    <li id="banking">Banking <span><iconify-icon icon="solar:arrow-right-outline"
+                                                style="color: black;" width="24"
+                                                height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <ul id="third-sub-dropdown-one">
+                                            <li>Saving Account</li>
+                                        </ul>
+                                    </li>
+                                    <li>Paytm Money</li>
+                                    <li id="online-payments">Insurance</li>
+                                    <li id="loans">Loans & Credit Card <span><iconify-icon
+                                                icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                                height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <ul id="third-sub-dropdown-two">
+                                            <li>Postpaid</li>
+                                            <li>Credit Cards</li>
+                                            <li id="online-payments">Personal Loan</li>
+                                            <li>Credit Report</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Paytm For Business</a>
+                        <ul id="first-dropdown">
+                            <li id="payments">Consumer Payments <span><iconify-icon icon="solar:arrow-right-outline"
+                                        style="color: black;" width="24" height="24"></iconify-icon><iconify-icon
+                                        icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                        height="24"></iconify-icon></span>
+                                <ul id="first-sub-dropdown" class="second-dropdown">
+                                    <li>Online Payments <span><iconify-icon icon="solar:arrow-right-outline"
+                                                style="color: black;" width="24"
+                                                height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <ul>
+                                            <li>Payment Gateway</li>
+                                            <li>Payment Links</li>
+                                            <li>Upi Payments</li>
+                                            <li>Subscriptions</li>
+                                            <li>Sattlements</li>
+                                            <li>Saved Instruments</li>
+                                        </ul>
+                                    </li>
+                                    <li>Offline Payments <span><iconify-icon icon="solar:arrow-right-outline"
+                                                style="color: black;" width="24"
+                                                height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <ul>
+                                            <li>Payment QR</li>
+                                            <li>Soundbox</li>
+                                            <li>All-in-One POS</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="t-booking">Business Payments <span><iconify-icon icon="solar:arrow-right-outline"
+                                        style="color: black;" width="24" height="24"></iconify-icon><iconify-icon
+                                        icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                        height="24"></iconify-icon></span>
+                                <ul id="second-sub-dropdown">
+                                    <li>Payouts</li>
+                                    <li>Nodal Account</li>
+                                </ul>
+                            </li>
+                            <li id="Financial-Services">Business Software<span><iconify-icon
+                                        icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                        height="24"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                        style="color: black;" width="24" height="24"></iconify-icon></span>
+                                <ul id="third-sub-dropdown">
+                                    <li id="banking">POS Billing Software</li>
+                                    <li>Payment For Business App</li>
+                                    <li id="online-payments">Advertising For Paytm</li>
+                                    <li id="loans">Business Khata </li>
+                                </ul>
+                            </li>
+                            <li id="t-booking" class="financial-service">Financial Service<span><iconify-icon
+                                        icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                        height="24"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                        style="color: black;" width="24" height="24"></iconify-icon></span>
+                                <ul id="third-sub-dropdown" class="financial-sub-service">
+                                    <li id="banking">Banking <span><iconify-icon icon="solar:arrow-right-outline"
+                                                style="color: black;" width="24"
+                                                height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <ul>
+                                            <li>Current Account</li>
+                                            <li>Salary Account</li>
+                                            <li>Employee Benifits</li>
+                                        </ul>
+
+                                    </li>
+                                    <li id="banking" class="Wealth-sub-service">Wealth
+                                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: black;"
+                                                width="24" height="24"></iconify-icon><iconify-icon
+                                                icon="iconamoon:arrow-right-2-light" style="color: black;" width="24"
+                                                height="24"></iconify-icon>
+                                        </span>
+                                        <ul class="Wealth-menu">
+                                            <li>Pansion</li>
+                                            <li>Mutual Funds</li>
+                                            <li>Paytm Gold</li>
+                                        </ul>
+                                    </li>
+                                    <li id="online-payments">Loans</li>
+                                    <li id="loans">Business Loan </li>
+                                    <li id="loans" class="insurance">Insurance</li>
+                                </ul>
+                            </li>
+                            <li id="Financial-Services" class="developer">Developer<span><iconify-icon
+                                        icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                        height="24"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                        style="color: black;" width="24" height="24"></iconify-icon></span>
+                                <ul>
+                                    <li>Payments API</li>
+                                    <li>PAI</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li class="company"><a href="#">Company</a>
+                        <ul class="company-dropdown">
+                            <li>About</li>
+                            <li>CSR</li>
+                            <li>Blog</li>
+                            <li>Contact US</li>
+                            <li>Terms & Conditions</li>
+                            <li>Sustainability
+                                <span><iconify-icon icon="solar:arrow-right-outline" style="color: black;" width="24"
+                                        height="24"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                        style="color: black;" width="24" height="24"></iconify-icon></span>
+
+                                <ul class="company-sub-dropdown">
+                                    <li>ESG Profile</li>
+                                    <li>Sustainability at Paytm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="sign-in-btn">
+                <a href="#">Sign In <span><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17" cy="17" r="17" fill="#002970" />
+                            <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+                                fill="white" />
+                        </svg></span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid second-layer">
+        <span>No Wallet KYC Required</span>
+        <span> <span style="font-size:25px;">😊</span> to pay using UPI on Paytm.</span>
+        <span><a href="#">Learn
+                more</a></span>
+    </div>
+    <!-- hero section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row hero-container">
+                <div class="hero-content col-lg-7 col-md-12">
+                    <div class="paytm-container">
+                        <img src="./images/asset 2.avif" alt="paytm-logo">
+                    </div>
+                    <div>
+                        <h1>India's Most-loved Payments App</h1>
+                    </div>
+                    <div>
+                        <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks
+                            & mutual
+                            funds, and do a lot more.</p>
+                    </div>
+                    <button>
+                        <a href="#">Download Paytm App</a>
+                        <div><iconify-icon icon="ic:baseline-apple" width="20" height="20"></iconify-icon>
+                            <iconify-icon icon="ion:logo-google-playstore" width="18" height="18"></iconify-icon>
+                        </div>
+                    </button>
+
+                </div>
+                <div class="col-lg-5 col-md-12 hero-image"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- section 1 -->
+    <div class="container-fluid section-1">
+        <div class="container section-1-container">
+            <div class="row section-1-heading-container">
+                <h2>Recharge & Pay Bills on Paytm.</h2>
+            </div>
+
+            <div class="row section-1-box-container">
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 4.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Recharge</h6>
+                        <div class="box-content-container">
+                            <p>Prepaid</p>
+                            <p>Mobile<span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 5.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Pay</h6>
+                        <div class="box-content-container">
+                            <p>Electricity</p>
+                            <p>Bill <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 6.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Recharge</h6>
+                        <div class="box-content-container">
+                            <p>DTH</p>
+                            <p>Connection <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 7.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Book</h6>
+                        <div class="box-content-container">
+                            <p>Gas</p>
+                            <p>Cylinder <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 8.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Pay</h6>
+                        <div class="box-content-container">
+                            <p>Broadband &</p>
+                            <p>Landline Bill <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 9.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>Pay</h6>
+                        <div class="box-content-container">
+                            <p>Education</p>
+                            <p>Fee <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 10.png" alt="icon"></div>
+                    <div class="box-content">
+                        <h6>All</h6>
+                        <div class="box-content-container">
+                            <p>Payment</p>
+                            <p>Services <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-2 -->
+    <div class="container-fluid section-1 section-2">
+        <div class="container section-1-container">
+            <div class="row section-1-heading-container">
+                <h2>Book & Buy on paytm. </h2>
+            </div>
+
+            <div class="row section-1-box-container">
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 11.png" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Movie</p>
+                            <p>Tickets <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 12.png" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Flight</p>
+                            <p>Tickets <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 13.png" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Bus</p>
+                            <p>Tickets <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src=".\images\asset 14.avif" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Train</p>
+                            <p>Tickets <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 15.png" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Buy</p>
+                            <p>Insurance <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 16.png" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>International</p>
+                            <p>Flights<span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="./images/asset 17.webp" alt="icon"></div>
+                    <div class="box-content">
+                        <div class="box-content-container">
+                            <p>Invest</p>
+                            <p>In Stocks <span> ></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section3 -->
+    <div class="container-fluid section-3">
+        <div class="container section-3-container">
+            <div class="heading">Paytm Payment Instruments</div>
+            <div class="row card">
+                <div class=" col-lg-6 card-left-side">
+                    <div class="card-first-box">
+                        <div class="card-img">
+                            <img src="./images/asset 18.png" alt="paytm-wallet">
+                        </div>
+                        <p>Paytm<br>Wallet</p>
+                    </div>
+                    <div class="heading">
+                        <h1>The Fastest Way to Pay In-store & Online.</h1>
+                    </div>
+                    <div class="para">
+                        <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores,
+                            websites and apps.</p>
+                    </div>
+
+                    <button>
+                        <a href="#">Download Paytm App</a>
+                        <div><iconify-icon icon="ic:baseline-apple" width="20" height="20"></iconify-icon>
+                            <iconify-icon icon="ion:logo-google-playstore" width="18" height="18"></iconify-icon>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-lg-6 card-right-side"></div>
+            </div>
+
+            
+            <div class="row card">
+                <div class=" col-lg-6 card-left-side">
+                    <div class="card-first-box">
+                        <div class="card-img">
+                            <img src="./images/asset 20.png" alt=" UPI-money">
+                        </div>
+                        <p>UPI Money<br>Transfer</p>
+                    </div>
+                    <div class="heading">
+                        <h1>Pay anyone directly from your bank account.</h1>
+                    </div>
+                    <div class="para">
+                        <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm
+                            Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+                    </div>
+
+                    <button>
+                        <a href="#">Download Paytm App</a>
+                        <div><iconify-icon icon="ic:baseline-apple" width="20" height="20"></iconify-icon>
+                            <iconify-icon icon="ion:logo-google-playstore" width="18" height="18"></iconify-icon>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-lg-6 card-right-side second-card-img"></div>
+            </div>
+
+            <div class="row card">
+                <div class=" col-lg-6 card-left-side third-card-left-side">
+                    <div class="card-first-box third-card-box">
+                        <div class="card-img">
+                            <img src="./images/asset 22.webp" alt="paytm-postpaid">
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h1>Want it?<br>
+                            No more waiting for it.</h1>
+                    </div>
+                    <div class="para">
+                        <p>With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things
+                            you want today and pay for them next month.</p>
+                    </div>
+
+                    <button><a href="">Learn More</a>
+                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                style="color: white;" width="22" height="22"></iconify-icon>
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-lg-6 card-right-side third-card-img"></div>
+            </div>
+
+            <div class="row fourth-container">
+                <div class="col-lg-6 section-3-fourth-container">
+                    <div class="fourth-card">
+                        <div class="img-container">
+                            <img src="./images/asset 24.png" alt=" HDFC">
+                        </div>
+                        <div class="heading">
+                            <h1>Unlimited Cashback
+                                Every time</h1>
+                        </div>
+                        <div class="para">
+                            <p>Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.
+                            </p>
+                        </div>
+                        <div class="fourth-card-img"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 section-3-fourth-container">
+                    <div class="fourth-card">
+                        <div class="img-container">
+                            <img src="./images/asset 26.png" alt="SBI">
+                        </div>
+                        <div class="heading">
+                            <h1>India’s Most Sincere Credit Card</h1>
+                        </div>
+                        <div class="para">
+                            <p>Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire.</p>
+                        </div>
+                        <div class="fourth-card-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section4 -->
+    <div class="container section-4">
+        <div class="row heading">
+            <h1>Financial Services by Paytm</h1>
+        </div>
+        <div class="row section-4-container">
+            <div class="col-lg-6 content-container">
+                <div class="img-container">
+                    <img src="./images/asset 28.png" alt="payments-bank">
+                </div>
+                <div class="heading">
+                    <h1>India's most sincere bank.</h1>
+                </div>
+                <div class="para">
+                    <p>Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With
+                        instant account opening, virtual debit card and zero balance requirements, experience the future
+                        of banking today.</p>
+                </div>
+                <button><a href="">Learn More</a>
+                    <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                            height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                            style="color: white;" width="22" height="22"></iconify-icon>
+                    </span>
+                </button>
+            </div>
+            <div class="col-lg-6 section-4-img"></div>
+
+        </div>
+    </div>
+    <!-- section-5 -->
+    <div class="container-fluid section-5">
+        <div class="container section-5-container">
+            <div class="row flex-s5">
+                <div class="col-lg-6 section-5-img"></div>
+
+                <div class="col-lg-6  section-5-content">
+                    <div class="content-container">
+                        <div class="img-container">
+                            <img src="./images/asset 30.webp" alt="paytm-money">
+                        </div>
+                        <div class="heading">
+                            <h1>Build Long-term Wealth & Achieve your Goals.</h1>
+                        </div>
+                        <div class="para">
+                            <p>Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks &
+                                mutual funds that can help you create wealth & realise your dreams.</p>
+                        </div>
+                        <button><a href="">Learn More</a>
+                            <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                    height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                    style="color: white;" width="22" height="22"></iconify-icon>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-6 -->
+    <div class="container-fluid outer-section-6">
+        <div class="container section-6">
+            <div class="row section-4-container">
+                <div class="col-lg-6 content-container">
+                    <div class="img-container">
+                        <img src="./images/asset 33.webp" alt="Isurance-booking">
+                    </div>
+                    <div class="heading">
+                        <h1>Insurance made easy.</h1>
+                    </div>
+                    <div class="para">
+                        <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance
+                            removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+                        </p>
+                    </div>
+                    <button><a href="">Learn More</a>
+                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                style="color: white;" width="22" height="22"></iconify-icon>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-lg-6 section-4-img"></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- section7 -->
+    <div class="container-fluid outer-section-7">
+        <div class="container section-7">
+            <div class="row section-4-container">
+                <div class="col-lg-6 section-4-img"></div>
+                <div class="col-lg-6 content-container">
+                    <div class="img-container">
+                        <img src="./images/asset 35.png" alt="loan">
+                    </div>
+                    <div class="heading">
+                        <h1>Get a Personal Loan in 2 Minutes.</h1>
+                    </div>
+                    <div class="para">
+                        <p>Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital,
+                            transparent and paperless.</p>
+                    </div>
+                    <button><a href="">Learn More</a>
+                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                style="color: white;" width="22" height="22"></iconify-icon>
+                        </span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- section8 -->
+    <div class="container-fluid section-8">
+        <div class="container section-3-container">
+            <div class="row heading">Business Services by Paytm</div>
+
+            <div class="row card">
+                <div class=" col-lg-6 card-left-side third-card-left-side">
+
+                    <div class="heading">
+                        <h1>Accept payments online with ease</h1>
+                    </div>
+                    <div class="para">
+                        <p>Grow your business with the payment gateway that powers India’s largest brands and even the
+                            Paytm App</p>
+                    </div>
+
+                    <button><a href="">Learn More</a>
+                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                style="color: white;" width="22" height="22"></iconify-icon>
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-lg-6 card-right-side third-card-img"></div>
+            </div>
+
+            <div class="row card ganesh-card">
+                <div class=" col-lg-6 card-left-side third-card-left-side">
+
+                    <div class="heading">
+                        <h1>In-shop payments powered by Paytm.</h1>
+                    </div>
+                    <div class="para">
+                        <p>Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide
+                            range of solutions for all kind of merchants</p>
+                    </div>
+
+                    <button><a href="">Learn More</a>
+                        <span><iconify-icon icon="solar:arrow-right-outline" style="color: white;" width="22"
+                                height="22"></iconify-icon><iconify-icon icon="iconamoon:arrow-right-2-light"
+                                style="color: white;" width="22" height="22"></iconify-icon>
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-lg-6 card-right-side third-card-img ganesh-img"></div>
+            </div>
+        </div>
+    </div>
+    <!-- section9 -->
+    <div class="container-fluid section-9">
+        <div class="container section-9-container">
+            <div class="heading">
+                <h1>Business Tools to help your business grow</h1>
+            </div>
+            <div class="row s9-card-container">
+                <div class="col-lg-3">
+                    <div class="img-container">
+                        <img src="./images/asset 39.webp" alt="billing-software">
+                    </div>
+                    <div class="heading">
+                        <h2>POS Billing Software</h2>
+                    </div>
+                    <div class="para">
+                        <p>Say Hello to Smart Retail Business Management</p>
+                    </div>
+                    <div class="learn-more">
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="img-container">
+                        <img src="./images/asset 41.webp" alt="Business-App">
+                    </div>
+                    <div class="heading">
+                        <h2>Paytm for
+                            Business App</h2>
+                    </div>
+                    <div class="para">
+                        <p>Everything you need to manage your business on your phone</p>
+                    </div>
+                    <div class="learn-more">
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="img-container">
+                        <img src="./images/asset 42.webp" alt="Paytm-UPI">
+                    </div>
+                    <div class="heading">
+                        <h2>Advertise on
+                            Paytm</h2>
+                    </div>
+                    <div class="para">
+                        <p>Grow your business by advertising on India’s largest mobile business</p>
+                    </div>
+                    <div class="learn-more">
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="img-container">
+                        <img src="./images/asset 43.webp" alt="Business-Khata">
+                    </div>
+                    <div class="heading">
+                        <h2>Business
+                            Khata</h2>
+                    </div>
+                    <div class="para">
+                        <p>Managing Khata made easy</p>
+                    </div>
+                    <div class="learn-more">
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <img src="./images/banner.png" class="img-fluid"  alt="kangapay">
+                <h3 class="text-center fs-3 fw-semibold text-dark">KangaPay Developed By KiranKumarBehera</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>   
+</body>
+
+</html>
